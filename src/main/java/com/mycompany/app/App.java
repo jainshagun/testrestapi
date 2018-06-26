@@ -1,13 +1,19 @@
 package com.mycompany.app;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
-}
+public class MessageUtil {
+
+   private String message;
+
+   //Constructor
+   //@param message to be printed
+	
+   public MessageUtil(String message){
+      this.message = message;
+   }
+      
+   // prints the message
+   public String printMessage(){
+      System.out.println(message);
+      return message;
+   }   
+}  
