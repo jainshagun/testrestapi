@@ -3,19 +3,16 @@ package com.mycompany.app;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-     public void testUnit() {
-        MyUnittest myUnittest = new MyUnittest();
+public class TestJunit {
+	
+   String message = "Hello World";	
+   MessageUtil messageUtil = new MessageUtil(message);
 
-        String result = myUnittest.println( "Hello World!" );
-
-        assertEquals( true );
-
-    }
+   @Test
+   public void testPrintMessage() {
+      assertEquals(message,messageUtil.printMessage());
+   }
 }
