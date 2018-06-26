@@ -11,9 +11,9 @@ public class AppTest
     extends TestCase
 {
      public void testUnit() {
-        MyUnit_test myUnit_test = new MyUnit_test();
+        MyUnittest myUnittest = new MyUnittest();
 
-        String result = myUnit.println( "Hello World!" );
+        String result = myUnittest.println( "Hello World!" );
 
         assertEquals( true );
 
