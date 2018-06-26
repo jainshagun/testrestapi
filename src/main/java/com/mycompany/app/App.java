@@ -1,13 +1,13 @@
 package com.mycompany.app;
 
-public class MessageUtil {
+public class App {
 
    private String message;
 
    //Constructor
    //@param message to be printed
 	
-   public MessageUtil(String message){
+   public App(String message){
       this.message = message;
    }
       
