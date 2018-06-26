@@ -5,7 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		bat 'cd githubproject'
 		bat 'mvn package'
             }
         }
