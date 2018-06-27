@@ -10,6 +10,8 @@ public class AppTest {
 
    @Test
    public void testPrintMessage() {
-      assertEquals(message,App.printMessage());
+	TestExample test = new TestExample;
+	   String result = test.App(message)
+      assertEquals(message,result);
    }
 }
