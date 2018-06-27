@@ -1,19 +1,19 @@
 package com.mycompany.app;
 
-public class App {
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-   private String message;
+@RestController
+public class HelloController {
 
-   //Constructor
-   //@param message to be printed
-	
-   public App(String message){
-      this.message = message;
-   }
-      
-   // prints the message
-   public String printMessage(){
-      System.out.println(message);
-      return message;
-   }   
-}  
+    //@RequestMapping("/")
+private final String message = "Hello World!";
+public HelloController(){}
+
+public static void main(String[] args){
+	System.out.println(new HelloController().getmessage());
+}
+public final String getmessage(){
+	return message;
+}
+}
