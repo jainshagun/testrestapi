@@ -11,7 +11,7 @@ pipeline {
     // requires SonarQube Scanner 2.8+
     def scannerHome = tool 'SonarQube Scanner 2.7.1';
     withSonarQubeEnv('My SonarQube Server') {
-      sh "${scannerHome}/bin/sonar-scanner"
+      bat "${scannerHome}/bin/sonar-scanner"
     }
   }
         }
