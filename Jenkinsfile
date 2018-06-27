@@ -9,7 +9,7 @@ pipeline {
             }
 	    post{
 		always{
-                     withSonarQubeEnv('My SonarQube Server') {
+                     withSonarQubeEnv('sonarQube') {
                      // requires SonarQube Scanner for Maven 3.2+
                      bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.5.4:sonar'
                      }
