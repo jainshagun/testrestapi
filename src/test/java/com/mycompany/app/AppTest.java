@@ -10,7 +10,7 @@ public class AppTest {
 
    @Test
    public void testPrintMessage() {
-	AppTest test = new AppTest();
+	App test = new App();
 	   String result = test.App(message);
       assertEquals(message,result);
    }
