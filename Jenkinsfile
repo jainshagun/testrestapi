@@ -9,10 +9,9 @@ pipeline {
             }
 	    post{
 		always{
-                     // requires SonarQube Scanner 2.8+
-                     def scannerHome = tool 'SonarQube Scanner 2.7.1';
                      withSonarQubeEnv('My SonarQube Server') {
-                      bat "${scannerHome}/bin/sonar-scanner"
+                     // requires SonarQube Scanner for Maven 3.2+
+                     bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.5.4:sonar'
                      }
                 }
 	    }
