@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		bat 'mvn package'
+		bat 'mvn docker:build'
             }
 	    post{
 		always{
