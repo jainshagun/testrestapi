@@ -19,7 +19,7 @@ pipeline {
     stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		bat 'java -jar target/RestAPI-0.0.1-SNAPSHOT.jar'
+		bat 'bat docker run -p 9999:8090 hello'
             }
     }
         stage('Test') {
