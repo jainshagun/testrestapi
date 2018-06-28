@@ -19,7 +19,7 @@ pipeline {
     stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		bat 'bat docker run -p 9999:8090 hello'
+		bat 'docker run -p 9999:8090 hello'
             }
     }
         stage('Test') {
